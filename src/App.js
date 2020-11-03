@@ -14,14 +14,8 @@ const App = () => {
 
   console.log(estates);
   return (
-    <Container>
-      <Row className="justify-content-center">
-        <Col xs="10">
-          <div>
-            hello
-          </div>
-        </Col>
-      </Row>
+    <Container className="d-flex justify-content-center">
+      <Estates estates={estates} />
     </Container>
   );
 }

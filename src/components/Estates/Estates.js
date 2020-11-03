@@ -1,10 +1,16 @@
 import React from "react";
+import Estate from "../Estate/Estate";
 import { EstatesWrapper } from "./Styles";
 
-const Estates = () => {
+const Estates = ({ estates }) => {
     return (
         <EstatesWrapper>
-            hello
+            {estates.map(estate => (
+                <Estate
+                  key={estate.id}
+                  estate={estate}
+                />
+            ))}
         </EstatesWrapper>
     );
 };
