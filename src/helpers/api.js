@@ -1,6 +1,13 @@
 export const getEstates = async () => {
-    const fetchEstates = await fetch("http://demo9594962.mockable.io/estates");
-    const estates = await fetchEstates.json();
+    try {
+        const fetchEstates = await fetch("https://demo9594962.mockable.io/estates", {mode: "no-cors"});
+        const estates = fetchEstates.json();
 
-    return estates;
+        return estates;
+    } catch(error) {
+        console.log(error);
+
+        return [];
+    }
+    
 };

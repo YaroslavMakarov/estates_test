@@ -1,6 +1,8 @@
 import React from "react";
+
 import Estate from "../Estate/Estate";
-import { EstatesWrapper } from "./Styles";
+
+import { EstatesWrapper } from "../../styled/estatesStyles";
 
 const Estates = ({ estates }) => {
     return (

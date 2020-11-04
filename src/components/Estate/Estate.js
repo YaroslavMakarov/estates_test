@@ -1,9 +1,17 @@
-import React from "react";
-import { EstateContainer, Img, EstateDescription } from "./estateStyles"
+import React from 'react';
+import { Link, useParams} from 'react-router-dom';
+
+import { EstateContainer, Img, EstateDescription } from '../../styled/estateStyles';
 
 const Estate = ({ estate }) => {
+    const params = useParams();
+
+    console.log(params);
     return (
-        <EstateContainer>
+        <EstateContainer
+          as={Link}
+          to={`/info/${estate.id}`}
+        >
             <Img src={estate.preview_img} />
             <EstateDescription>
                 {`Name: ${estate.title}`}
