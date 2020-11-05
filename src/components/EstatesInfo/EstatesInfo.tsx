@@ -1,9 +1,10 @@
 import React from 'react';
-import { useParams, useHistory } from 'react-router-dom';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { useParams } from 'react-router-dom';
+import { Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useSelector } from 'react-redux';
 
+import BackButton from '../BackButton/BackButton';
 import EstateInfoCarousel from '../EstateInfoCarousel/EstateInfoCarousel';
 import NoInfo from '../NoInfo/NoInfo';
 
@@ -16,7 +17,6 @@ type Params = {
 
 const EstateInfo = () => {
 const params: Params = useParams();
-const history = useHistory();
 const estates = useSelector(estatesSelector);
 
 const currentEstate = estates.filter(estate => estate.id === Number(params.id));
@@ -29,18 +29,7 @@ if (currentEstate.length === 0) {
 
     return (
         <>
-            <Container
-              fluid
-              className="p-0"
-            >
-                <Button
-                variant="dark"
-                className="mb-3"
-                onClick={() => history.goBack()}
-                >
-                    Back
-                </Button>
-            </Container>
+            <BackButton />
             <Row>
                 <Col sm={5}>
                     <Img 
