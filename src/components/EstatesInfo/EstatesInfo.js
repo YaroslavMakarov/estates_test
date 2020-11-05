@@ -1,14 +1,18 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
-import { Row, Col } from 'react-bootstrap';
+import { useParams, useHistory } from 'react-router-dom';
+import { Container, Row, Col, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useSelector } from 'react-redux';
 
 import EstateInfoCarousel from '../EstateInfoCarousel/EstateInfoCarousel';
 
 import { Img, EstateDescription } from '../../styled/estateStyles';
+import { estatesSelector } from '../../redux/estates';
 
-const EstateInfo = ({ estates }) => {
+const EstateInfo = () => {
 const params = useParams();
+const history = useHistory();
+const estates = useSelector(estatesSelector);
 
 const currentEstate = estates.find(estate => {
     if (estate.id === Number(params.id)) {
@@ -18,6 +22,18 @@ const currentEstate = estates.find(estate => {
 
     return (
         <>
+            <Container
+              fluide
+              className="p-0"
+            >
+                <Button
+                variant="dark"
+                className="mb-3"
+                onClick={() => history.goBack()}
+                >
+                    Back
+                </Button>
+            </Container>
             <Row>
                 <Col sm={5}>
                     <Img 
@@ -25,7 +41,7 @@ const currentEstate = estates.find(estate => {
                         id={params.id}
                     />
                 </Col>
-                <Col sm={{offset: 1, span: 4}}>
+                <Col sm={{offset: 1, span: 5}}>
                     <EstateDescription id={params.id}>
                         {`Name: ${currentEstate.title}`}
                     </EstateDescription>
@@ -49,4 +65,3 @@ const currentEstate = estates.find(estate => {
 };
 
 export default EstateInfo;
- {/* {currentEstate.id} */}

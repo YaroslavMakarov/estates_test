@@ -5,7 +5,7 @@ import { getEstates } from '../helpers/api';
 
 //action types
 const FETCH_ESTATES = "estates_test/estates/fetch";
-const SET_ESTATES = "estates_test/estates/fetch";
+const SET_ESTATES = "estates_test/estates/set";
 
 //action creators
 export const fetchPosts = () => ({
