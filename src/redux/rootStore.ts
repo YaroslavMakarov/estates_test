@@ -2,7 +2,7 @@ import { combineReducers, createStore, applyMiddleware } from "redux";
 import createSagaMiddleware from "redux-saga";
 
 import { loadState, saveState } from '../helpers/localStorage';
-import estatesReducer from "./estates";
+import estatesReducer, { InitialEstateState } from "./estates";
 import { rootSaga } from "./rootSaga";
 
 const rootReucer = combineReducers({
@@ -20,5 +20,10 @@ store.subscribe(() => {
 });
 
 reduxSagas.run(rootSaga);
+
+//root state type
+export type RootState = {
+    estates: InitialEstateState;
+};
 
 export default store;

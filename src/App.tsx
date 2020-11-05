@@ -1,24 +1,22 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, Dispatch } from 'react';
 import { Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Switch, Route } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
 import Estates from './components/Estates/Estates';
 import EstateInfo from './components/EstatesInfo/EstatesInfo';
 
 import { AppWrapper } from './styled/AppSteles';
-import { estatesSelector, fetchPosts } from './redux/estates';
+import { AllEstatesAction, fetchPosts } from './redux/estates';
 
 
 const App = () => {
-  const dispatch = useDispatch();
-  const estates = useSelector(estatesSelector);
+  const estatesDispatch = useDispatch<Dispatch<AllEstatesAction>>();
 
   useEffect(() => {
-    dispatch(fetchPosts());
+    estatesDispatch(fetchPosts());
   }, []);
-  console.log(estates);
 
   return (
     <AppWrapper>

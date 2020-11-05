@@ -1,9 +1,13 @@
 import React from 'react';
 import { Row, Col,
          Carousel, CarouselItem } from 'react-bootstrap';
-import { Img } from '../../styled/estateStyles';         
+import { Img } from '../../styled/estateStyles';   
 
-const EstateInfoCarousel = ({ photos }) => {
+type Props = {
+    photos: Array<string>;
+};
+
+const EstateInfoCarousel: React.FC<Props> = ({ photos }) => {
     return (
         <Row>
             <Col sm={{span: 6, offset: 3}}>

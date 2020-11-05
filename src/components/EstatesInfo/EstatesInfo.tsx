@@ -5,25 +5,32 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useSelector } from 'react-redux';
 
 import EstateInfoCarousel from '../EstateInfoCarousel/EstateInfoCarousel';
+import NoInfo from '../NoInfo/NoInfo';
 
 import { Img, EstateDescription } from '../../styled/estateStyles';
 import { estatesSelector } from '../../redux/estates';
 
+type Params = {
+    id: string;
+};
+
 const EstateInfo = () => {
-const params = useParams();
+const params: Params = useParams();
 const history = useHistory();
 const estates = useSelector(estatesSelector);
 
-const currentEstate = estates.find(estate => {
-    if (estate.id === Number(params.id)) {
-        return estate;
-    }
-})
+const currentEstate = estates.filter(estate => estate.id === Number(params.id));
+
+if (currentEstate.length === 0) {
+    return (
+        <NoInfo />
+    );
+}
 
     return (
         <>
             <Container
-              fluide
+              fluid
               className="p-0"
             >
                 <Button
@@ -37,29 +44,30 @@ const currentEstate = estates.find(estate => {
             <Row>
                 <Col sm={5}>
                     <Img 
-                        src={currentEstate.preview_img}
+                        src={currentEstate[0].preview_img}
                         id={params.id}
                     />
                 </Col>
                 <Col sm={{offset: 1, span: 5}}>
                     <EstateDescription id={params.id}>
-                        {`Name: ${currentEstate.title}`}
+                        {`Name: ${currentEstate[0].title}`}
                     </EstateDescription>
                     <EstateDescription id={params.id}>
-                        {`Price: ${currentEstate.price}$`}
+                        {`Price: ${currentEstate[0].price}$`}
                     </EstateDescription>
                     <EstateDescription id={params.id}>
-                        {`Address: ${currentEstate.address.street}, ${currentEstate.address.number}`}
+                        {`Address: ${currentEstate[0].address.street},
+                                   ${currentEstate[0].address.number}`}
                     </EstateDescription>
                     <EstateDescription id={params.id}>
-                        {`Seller: ${currentEstate.seller}`}
+                        {`Seller: ${currentEstate[0].seller}`}
                     </EstateDescription>
                     <EstateDescription id={params.id}>
-                        {`Description: ${currentEstate.description}`}
+                        {`Description: ${currentEstate[0].description}`}
                     </EstateDescription>
                 </Col>
             </Row>
-            <EstateInfoCarousel photos={currentEstate.detailed_photos} />
+            <EstateInfoCarousel photos={currentEstate[0].detailed_photos} />
         </>
     )
 };

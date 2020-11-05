@@ -1,12 +1,14 @@
 import React from 'react';
-import { Link, useParams} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import { EstateContainer, Img, EstateDescription } from '../../styled/estateStyles';
 
-const Estate = ({ estate }) => {
-    const params = useParams();
+type Props = {
+    estate: Estate;
+};
 
-    console.log(params);
+const Estate: React.FC<Props> = ({ estate }) => {
+
     return (
         <EstateContainer
           as={Link}
