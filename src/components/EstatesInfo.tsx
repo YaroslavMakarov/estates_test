@@ -4,12 +4,12 @@ import { Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useSelector } from 'react-redux';
 
-import BackButton from '../BackButton/BackButton';
-import EstateInfoCarousel from '../EstateInfoCarousel/EstateInfoCarousel';
-import NoInfo from '../NoInfo/NoInfo';
+import BackButton from '../components/BackButton';
+import EstateInfoCarousel from '../components/EstateInfoCarousel';
+import NoInfo from '../components/NoInfo';
 
-import { Img, EstateDescription } from '../../styled/estateStyles';
-import { estatesSelector } from '../../redux/estates';
+import { Img, EstateDescription } from '../styled/estateStyles';
+import { estatesSelector } from '../redux/estates';
 
 type Params = {
     id: string;

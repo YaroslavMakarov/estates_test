@@ -1,7 +1,7 @@
 import React from 'react';
 import { Row, Col,
          Carousel, CarouselItem } from 'react-bootstrap';
-import { Img } from '../../styled/estateStyles';   
+import { Img } from '../styled/estateStyles';   
 
 type Props = {
     photos: Array<string>;
@@ -13,7 +13,9 @@ const EstateInfoCarousel: React.FC<Props> = ({ photos }) => {
             <Col sm={{span: 6, offset: 3}}>
                 <Carousel>
                     {photos.map(photo => (
-                    <CarouselItem>
+                    <CarouselItem
+                        key={photo}
+                    >
                         <Img src={photo} />
                     </CarouselItem>
                     ))}

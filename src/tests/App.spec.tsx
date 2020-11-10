@@ -1,34 +1,55 @@
-import React from 'react';
-import { shallow } from 'enzyme';
+import React, { DependencyList, EffectCallback } from 'react';
+import { mount, ReactWrapper } from 'enzyme';
 import { Provider } from 'react-redux';
+import { MemoryRouter } from 'react-router-dom';
+import * as ReactRedux from 'react-redux';
+import { Action, Dispatch } from 'redux';
 import configureStore from 'redux-mock-store';
 
 import App from '../App';
 
 import { estatesMock } from '../mocks/estatesMock';
+import { FETCH_ESTATES } from '../redux/estates';
 
-describe("App component", () => {
-    const mockStore = configureStore();
-    let store;
+const mockStore = configureStore();
 
-    it("Shoud render App component", () => {
-        store = mockStore(estatesMock);
-        const component = shallow(
-            <Provider store={store}>    
-                <App />
+describe('Info component', () => {
+    const store = mockStore(estatesMock);
+
+    let useEffect: jest.SpyInstance<void, [effect: EffectCallback, deps?: DependencyList | undefined]>;
+    let useDispatch: jest.SpyInstance<Dispatch<Action<any>>, []>;
+    let wrapper: ReactWrapper;
+    const mockActionCreator = jest.fn();
+    const mockUseEffect = () => {
+        useEffect.mockImplementationOnce(f => f());
+      };
+    const mockDispatch = () => {
+        useDispatch.mockReturnValue(mockActionCreator);
+    }  
+    beforeEach(() => {
+        useEffect = jest.spyOn(React, 'useEffect');
+        useDispatch = jest.spyOn(ReactRedux, 'useDispatch');
+        mockUseEffect();
+        mockDispatch();
+
+        wrapper = mount(    
+            <Provider store={store}>
+                <MemoryRouter>
+                    <App />
+                </MemoryRouter>    
             </Provider>
-        ).dive();
-        const app = component.find("AppWrapper");
-        expect(app.length).toBe(1);
-        console.log(component.debug());
+        );       
+    });
+
+    it('shoud render Info component', () => {        
+        expect(wrapper.debug()).toMatchSnapshot();
+    });
+
+    it('shoud call componentDidMount once', () => {        
+        expect(useEffect).toHaveBeenCalledTimes(1);
+    });
+
+    it('shoud mock dispatch', () => {
+        expect(mockActionCreator).toHaveBeenCalledWith({type: FETCH_ESTATES});
     });
 });
-
-// describe("Estates component", () => {
-//     it("render Estates wrapper", () => {
-//         const component = shallow(<Estates />);
-//         const wrapper = component.find("EstatesWrapper");
-//         expect(wrapper.length).toBe(1);
-//         console.log(wrapper.debug());
-//     });
-// });

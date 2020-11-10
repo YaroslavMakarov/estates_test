@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Info component shoud render Info component 1`] = `
+"<Provider store={{...}}>
+  <MemoryRouter>
+    <Router history={{...}}>
+      <App>
+        <styled.div>
+          <div className=\\"sc-jSgupP gQRInk\\">
+            <Container className=\\" d-flex align-items-center flex-column \\" fluid={false}>
+              <div className=\\" d-flex align-items-center flex-column  container\\">
+                <Switch>
+                  <Route path=\\"/\\" exact={true} component={[Function: EstatesLists]} location={{...}} computedMatch={{...}}>
+                    <EstatesLists history={{...}} location={{...}} match={{...}} staticContext={[undefined]}>
+                      <styled.div>
+                        <div className=\\"sc-hKgILt gYRjSP\\">
+                          <Estate estate={{...}}>
+                            <styled.div as={{...}} to=\\"/info/1\\">
+                              <Link to=\\"/info/1\\" className=\\"sc-bdfBwQ fhkZDT\\">
+                                <LinkAnchor className=\\"sc-bdfBwQ fhkZDT\\" href=\\"/info/1\\" navigate={[Function: navigate]}>
+                                  <a className=\\"sc-bdfBwQ fhkZDT\\" href=\\"/info/1\\" onClick={[Function: onClick]}>
+                                    <styled.img src=\\"https://cp12.nevsepic.com.ua/62/1353962605-0435309-www.nevsepic.com.ua.jpg\\">
+                                      <img src=\\"https://cp12.nevsepic.com.ua/62/1353962605-0435309-www.nevsepic.com.ua.jpg\\" className=\\"sc-gsTCUz esHetz\\" />
+                                    </styled.img>
+                                    <styled.div>
+                                      <div className=\\"sc-dlfnbm hMEdSQ\\">
+                                        Name: Shevchenko estate
+                                      </div>
+                                    </styled.div>
+                                    <styled.div>
+                                      <div className=\\"sc-dlfnbm hMEdSQ\\">
+                                        Price: 30000$
+                                      </div>
+                                    </styled.div>
+                                    <styled.div>
+                                      <div className=\\"sc-dlfnbm hMEdSQ\\">
+                                        Address: Melnychna, 12
+                                      </div>
+                                    </styled.div>
+                                  </a>
+                                </LinkAnchor>
+                              </Link>
+                            </styled.div>
+                          </Estate>
+                        </div>
+                      </styled.div>
+                    </EstatesLists>
+                  </Route>
+                </Switch>
+              </div>
+            </Container>
+          </div>
+        </styled.div>
+      </App>
+    </Router>
+  </MemoryRouter>
+</Provider>"
+`;

@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EstateList component shoud get snapShot estates list 1`] = `
+"<Provider store={{...}}>
+  <MemoryRouter>
+    <Router history={{...}}>
+      <EstatesLists>
+        <styled.div>
+          <div className=\\"sc-hKgILt gYRjSP\\">
+            <Estate estate={{...}}>
+              <styled.div as={{...}} to=\\"/info/1\\">
+                <Link to=\\"/info/1\\" className=\\"sc-bdfBwQ fhkZDT\\">
+                  <LinkAnchor className=\\"sc-bdfBwQ fhkZDT\\" href=\\"/info/1\\" navigate={[Function: navigate]}>
+                    <a className=\\"sc-bdfBwQ fhkZDT\\" href=\\"/info/1\\" onClick={[Function: onClick]}>
+                      <styled.img src=\\"https://cp12.nevsepic.com.ua/62/1353962605-0435309-www.nevsepic.com.ua.jpg\\">
+                        <img src=\\"https://cp12.nevsepic.com.ua/62/1353962605-0435309-www.nevsepic.com.ua.jpg\\" className=\\"sc-gsTCUz esHetz\\" />
+                      </styled.img>
+                      <styled.div>
+                        <div className=\\"sc-dlfnbm hMEdSQ\\">
+                          Name: Shevchenko estate
+                        </div>
+                      </styled.div>
+                      <styled.div>
+                        <div className=\\"sc-dlfnbm hMEdSQ\\">
+                          Price: 30000$
+                        </div>
+                      </styled.div>
+                      <styled.div>
+                        <div className=\\"sc-dlfnbm hMEdSQ\\">
+                          Address: Melnychna, 12
+                        </div>
+                      </styled.div>
+                    </a>
+                  </LinkAnchor>
+                </Link>
+              </styled.div>
+            </Estate>
+          </div>
+        </styled.div>
+      </EstatesLists>
+    </Router>
+  </MemoryRouter>
+</Provider>"
+`;

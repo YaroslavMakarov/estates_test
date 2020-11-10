@@ -1,11 +1,11 @@
-import React, { useEffect, Dispatch } from 'react';
+import React, { Dispatch } from 'react';
 import { Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Switch, Route } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 
-import Estates from './components/Estates/Estates';
-import EstateInfo from './components/EstatesInfo/EstatesInfo';
+import EstatesLists from './components/EstatesList';
+import EstateInfo from './components/EstatesInfo';
 
 import { AppWrapper } from './styled/AppSteles';
 import { AllEstatesAction, fetchPosts } from './redux/estates';
@@ -14,9 +14,9 @@ import { AllEstatesAction, fetchPosts } from './redux/estates';
 const App = () => {
   const estatesDispatch = useDispatch<Dispatch<AllEstatesAction>>();
 
-  useEffect(() => {
+  React.useEffect(() => {
     estatesDispatch(fetchPosts());
-  }, []);
+  }, []);  
 
   return (
     <AppWrapper>
@@ -30,7 +30,7 @@ const App = () => {
           <Route
             path="/"
             exact
-            component={Estates}
+            component={EstatesLists}
           />
           <Route
             path="/info/:id"

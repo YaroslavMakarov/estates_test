@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 import { useSelector } from 'react-redux';
 
-import Estate from "../Estate/Estate";
+import Estate from './Estate';
 
-import { EstatesWrapper } from "../../styled/estatesStyles";
-import { estatesSelector } from '../../redux/estates';
+import { EstatesWrapper } from '../styled/estatesStyles';
+import { estatesSelector } from '../redux/estates';
 
-const Estates = () => {
+const EstatesLists = () => {
     const estates = useSelector(estatesSelector);
 
     return (
@@ -21,4 +21,4 @@ const Estates = () => {
     );
 };
 
-export default Estates;
+export default EstatesLists;

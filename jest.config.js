@@ -1,15 +1,12 @@
-// module.exports = {
-//     setupFilesAfterEnv: ["<rootDir>src/setupTests.js"],
-// };
 module.exports = {
-  "roots": [
+  roots: [
     "<rootDir>/src"
   ],
   "transform": {
     "^.+\\.tsx?$": "ts-jest"
   },
-  "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
-  "moduleFileExtensions": [
+  testRegex: "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
+  moduleFileExtensions: [
     "ts",
     "tsx",
     "js",
@@ -17,5 +14,5 @@ module.exports = {
     "json",
     "node"
   ],
-  "snapshotSerializers": ["enzyme-to-json/serializer"],
+  snapshotSerializers: ["enzyme-to-json/serializer"],
 }
