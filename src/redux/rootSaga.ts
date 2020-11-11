@@ -1,6 +1,6 @@
-import { all } from "redux-saga/effects"
+import { all } from 'redux-saga/effects';
 
-import { dispatchEstatesWatcher } from "./estates";
+import { dispatchEstatesWatcher } from './estates';
 
 export function* rootSaga() {
 

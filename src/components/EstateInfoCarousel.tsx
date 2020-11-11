@@ -1,7 +1,7 @@
 import React from 'react';
 import { Row, Col,
          Carousel, CarouselItem } from 'react-bootstrap';
-import { Img } from '../../styled/estateStyles';   
+import { Img } from '../styled/estateStyles';   
 
 type Props = {
     photos: Array<string>;

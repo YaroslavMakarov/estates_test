@@ -2,7 +2,7 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { NoInfoContent } from '../../styled/NoInfoStyles';
+import { NoInfoContent } from '../styled/NoInfoStyles';
 
 const NoInfo = () => {
     return (

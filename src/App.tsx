@@ -4,8 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Switch, Route } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 
-import Estates from './components/Estates/Estates';
-import EstateInfo from './components/EstatesInfo/EstatesInfo';
+import Estates from './components/Estates';
+import EstateInfo from './components/EstatesInfo';
 
 import { AppWrapper } from './styled/AppSteles';
 import { AllEstatesAction, fetchPosts } from './redux/estates';

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { EstateContainer, Img, EstateDescription } from '../../styled/estateStyles';
+import { EstateContainer, Img, EstateDescription } from '../styled/estateStyles';
 
 type Props = {
     estate: Estate;
