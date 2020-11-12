@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Estate component get snapshot Estate 1`] = `
+<body>
+  <div>
+    <a
+      class="sc-bdfBwQ fhkZDT"
+      data-testid="estate"
+      href="/info/1"
+    >
+      <img
+        alt="main img"
+        class="sc-gsTCUz esHetz"
+        src="https://cp12.nevsepic.com.ua/62/1353962605-0435309-www.nevsepic.com.ua.jpg"
+      />
+      <div
+        class="sc-dlfnbm hMEdSQ"
+      >
+        Name: Shevchenko estate
+      </div>
+      <div
+        class="sc-dlfnbm hMEdSQ"
+      >
+        Price: 30000$
+      </div>
+      <div
+        class="sc-dlfnbm hMEdSQ"
+      >
+        Address: Melnychna, 12
+      </div>
+    </a>
+  </div>
+</body>
+`;

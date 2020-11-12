@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<body>
+  <div>
+    <div
+      class="p-0 container-fluid"
+    >
+      <button
+        class="mb-3 btn btn-dark"
+        type="button"
+      >
+        Back
+      </button>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`BackButton component get BackButton snapshot 1`] = `
+<body>
+  <div>
+    <div
+      class="p-0 container-fluid"
+    >
+      <button
+        class="mb-3 btn btn-dark"
+        type="button"
+      >
+        Back
+      </button>
+    </div>
+  </div>
+</body>
+`;

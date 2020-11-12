@@ -5,7 +5,7 @@ import { loadState, saveState } from '../helpers/localStorage';
 import estatesReducer, { InitialEstateState } from './estates';
 import { rootSaga } from './rootSaga';
 
-const rootReucer = combineReducers({
+export const rootReucer = combineReducers({
     estates: estatesReducer,
 });
 
