@@ -35,6 +35,7 @@ if (currentEstate.length === 0) {
                     <Img 
                         src={currentEstate[0].preview_img}
                         id={params.id}
+                        alt="main img"
                     />
                 </Col>
                 <Col sm={{offset: 1, span: 5}}>

@@ -13,8 +13,9 @@ const Estate: React.FC<Props> = ({ estate }) => {
         <EstateContainer
           as={Link}
           to={`/info/${estate.id}`}
+          data-testid="estate"
         >
-            <Img src={estate.preview_img} />
+            <Img src={estate.preview_img} alt="main img" />
             <EstateDescription>
                 {`Name: ${estate.title}`}
             </EstateDescription>

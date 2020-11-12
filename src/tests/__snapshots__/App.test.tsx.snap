@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component get snapshot App component 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-jSgupP gQRInk"
+    >
+      <div
+        class=" d-flex align-items-center flex-column  container"
+      >
+        <div
+          class="sc-hKgILt gYRjSP"
+        >
+          <a
+            class="sc-bdfBwQ fhkZDT"
+            data-testid="estate"
+            href="/info/1"
+          >
+            <img
+              alt="main img"
+              class="sc-gsTCUz esHetz"
+              src="https://cp12.nevsepic.com.ua/62/1353962605-0435309-www.nevsepic.com.ua.jpg"
+            />
+            <div
+              class="sc-dlfnbm hMEdSQ"
+            >
+              Name: Shevchenko estate
+            </div>
+            <div
+              class="sc-dlfnbm hMEdSQ"
+            >
+              Price: 30000$
+            </div>
+            <div
+              class="sc-dlfnbm hMEdSQ"
+            >
+              Address: Melnychna, 12
+            </div>
+          </a>
+          <a
+            class="sc-bdfBwQ fhkZDT"
+            data-testid="estate"
+            href="/info/2"
+          >
+            <img
+              alt="main img"
+              class="sc-gsTCUz esHetz"
+              src="https://biz.liga.net/images/general/2018/11/15/thumbnail-tw-20181115111659-8474.jpg?v=1542279867"
+            />
+            <div
+              class="sc-dlfnbm hMEdSQ"
+            >
+              Name: Yanukovich estate
+            </div>
+            <div
+              class="sc-dlfnbm hMEdSQ"
+            >
+              Price: 3000000$
+            </div>
+            <div
+              class="sc-dlfnbm hMEdSQ"
+            >
+              Address: Prisident, 4
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;

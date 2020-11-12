@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BackButton component get BackButton snapshot 1`] = `
+<body>
+  <div>
+    <div
+      class="d-flex align-items-center justify-content-center container"
+    >
+      <div
+        class="sc-bdfBwQ fciMqB"
+      >
+        Sorry, don't have any information about this estate.
+      </div>
+    </div>
+  </div>
+</body>
+`;

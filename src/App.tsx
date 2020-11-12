@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Switch, Route } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 
-import Estates from './components/Estates';
+import EstatesList from './components/EstatesList';
 import EstateInfo from './components/EstatesInfo';
 
 import { AppWrapper } from './styled/AppSteles';
@@ -30,7 +30,7 @@ const App = () => {
           <Route
             path="/"
             exact
-            component={Estates}
+            component={EstatesList}
           />
           <Route
             path="/info/:id"

@@ -13,8 +13,13 @@ const EstateInfoCarousel: React.FC<Props> = ({ photos }) => {
             <Col sm={{span: 6, offset: 3}}>
                 <Carousel>
                     {photos.map(photo => (
-                    <CarouselItem>
-                        <Img src={photo} />
+                    <CarouselItem
+                        key={photo}
+                    >
+                        <Img
+                          src={photo}
+                          alt="slide"
+                        />
                     </CarouselItem>
                     ))}
                 </Carousel>

@@ -6,7 +6,7 @@ import Estate from './Estate';
 import { EstatesWrapper } from '../styled/estatesStyles';
 import { estatesSelector } from '../redux/estates';
 
-const Estates = () => {
+const EstatesList = () => {
     const estates = useSelector(estatesSelector);
 
     return (
@@ -21,4 +21,4 @@ const Estates = () => {
     );
 };
 
-export default Estates;
+export default EstatesList;
