@@ -7,22 +7,20 @@ type Props = {
     photos: Array<string>;
 };
 
-const EstateInfoCarousel: React.FC<Props> = ({ photos }) => {
-    return (
-        <Row>
-            <Col sm={{span: 6, offset: 3}}>
-                <Carousel>
-                    {photos.map(photo => (
+const EstateInfoCarousel: React.FC<Props> = ({ photos }) => (
+    <Row>
+        <Col sm={{span: 6, offset: 3}}>
+            <Carousel>
+                {photos.map(photo => (
                     <CarouselItem
                         key={photo}
                     >
                         <Img src={photo} />
                     </CarouselItem>
-                    ))}
-                </Carousel>
-            </Col>
-        </Row>
-    );
-};
+                ))}
+            </Carousel>
+        </Col>
+    </Row>
+);
 
 export default EstateInfoCarousel;
