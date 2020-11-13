@@ -6,7 +6,8 @@ import { getEstates } from '../helpers/api';
 import { RootState } from './rootStore';       
 
 //action types
-const FETCH_ESTATES = 'estates_test/estates/fetch';
+export const FETCH_ESTATES = 'estates_test/estates/fetch';
+
 const SET_ESTATES = 'estates_test/estates/set';
 
 //action creator types

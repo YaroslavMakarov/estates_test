@@ -1,0 +1,153 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EstateInfo component with info EstateInfo component shoud get snapShot estates info without estates 1`] = `
+"<Provider store={{...}}>
+  <MemoryRouter initialEntries={{...}}>
+    <Router history={{...}}>
+      <Route path=\\"/info/:id\\" component={[Function: EstateInfo]}>
+        <EstateInfo history={{...}} location={{...}} match={{...}} staticContext={[undefined]}>
+          <BackButton>
+            <Container fluid={true} className=\\"p-0\\">
+              <div className=\\"p-0 container-fluid\\">
+                <Button variant=\\"dark\\" className=\\"mb-3\\" onClick={[Function: onClick]} active={false} disabled={false}>
+                  <button onClick={[Function: onClick]} disabled={false} type=\\"button\\" className=\\"mb-3 btn btn-dark\\">
+                    Back
+                  </button>
+                </Button>
+              </div>
+            </Container>
+          </BackButton>
+          <Row noGutters={false}>
+            <div className=\\"row\\">
+              <Col sm={5}>
+                <div className=\\"col-sm-5\\">
+                  <styled.img src=\\"https://cp12.nevsepic.com.ua/62/1353962605-0435309-www.nevsepic.com.ua.jpg\\" id=\\"1\\">
+                    <img src=\\"https://cp12.nevsepic.com.ua/62/1353962605-0435309-www.nevsepic.com.ua.jpg\\" id=\\"1\\" className=\\"sc-gsTCUz hUELus\\" />
+                  </styled.img>
+                </div>
+              </Col>
+              <Col sm={{...}}>
+                <div className=\\"col-sm-5 offset-sm-1\\">
+                  <styled.div id=\\"1\\">
+                    <div id=\\"1\\" className=\\"sc-dlfnbm kGxffL\\">
+                      Name: Shevchenko estate
+                    </div>
+                  </styled.div>
+                  <styled.div id=\\"1\\">
+                    <div id=\\"1\\" className=\\"sc-dlfnbm kGxffL\\">
+                      Price: 30000$
+                    </div>
+                  </styled.div>
+                  <styled.div id=\\"1\\">
+                    <div id=\\"1\\" className=\\"sc-dlfnbm kGxffL\\">
+                      Address: Melnychna, 12
+                    </div>
+                  </styled.div>
+                  <styled.div id=\\"1\\">
+                    <div id=\\"1\\" className=\\"sc-dlfnbm kGxffL\\">
+                      Seller: Chack Norris
+                    </div>
+                  </styled.div>
+                  <styled.div id=\\"1\\">
+                    <div id=\\"1\\" className=\\"sc-dlfnbm kGxffL\\">
+                      Description: The best from Chuck
+                    </div>
+                  </styled.div>
+                </div>
+              </Col>
+            </div>
+          </Row>
+          <EstateInfoCarousel photos={{...}}>
+            <Row noGutters={false}>
+              <div className=\\"row\\">
+                <Col sm={{...}}>
+                  <div className=\\"col-sm-6 offset-sm-3\\">
+                    <Carousel slide={true} fade={false} controls={true} indicators={true} defaultActiveIndex={0} interval={5000} keyboard={true} pause=\\"hover\\" wrap={true} touch={true} prevIcon={{...}} prevLabel=\\"Previous\\" nextIcon={{...}} nextLabel=\\"Next\\">
+                      <div onKeyDown={[Function (anonymous)]} onMouseOver={[Function (anonymous)]} onMouseOut={[Function (anonymous)]} onTouchStart={[Function (anonymous)]} onTouchMove={[Function (anonymous)]} onTouchEnd={[Function (anonymous)]} className=\\"carousel slide\\">
+                        <ol className=\\"carousel-indicators\\">
+                          <li className=\\"active\\" onClick={[Function (anonymous)]} />
+                          <li className={[undefined]} onClick={[Function (anonymous)]} />
+                          <li className={[undefined]} onClick={[Function (anonymous)]} />
+                        </ol>
+                        <div className=\\"carousel-inner\\">
+                          <Transition in={true} onEnter={[Function (anonymous)]} onEntered={[Function (anonymous)]} addEndListener={[Function: transitionEnd]} mountOnEnter={false} unmountOnExit={false} appear={false} enter={true} exit={true} onEntering={[Function: noop]} onExit={[Function: noop]} onExiting={[Function: noop]} onExited={[Function: noop]}>
+                            <CarouselItem className=\\"active\\">
+                              <div className=\\"active carousel-item\\">
+                                <styled.img src=\\"https://www.wtoc.com/resizer/ckPwhlUdYaFcLiBWMX0J033a0Ow=/1200x0/arc-anglerfish-arc2-prod-raycom.s3.amazonaws.com/public/JGJB35IW4JAMROXX3D3MMEF2SU.jpg\\">
+                                  <img src=\\"https://www.wtoc.com/resizer/ckPwhlUdYaFcLiBWMX0J033a0Ow=/1200x0/arc-anglerfish-arc2-prod-raycom.s3.amazonaws.com/public/JGJB35IW4JAMROXX3D3MMEF2SU.jpg\\" className=\\"sc-gsTCUz esHetz\\" />
+                                </styled.img>
+                              </div>
+                            </CarouselItem>
+                          </Transition>
+                          <Transition in={false} onEnter={[Function: noop]} onEntered={[Function: noop]} addEndListener={[Function: transitionEnd]} mountOnEnter={false} unmountOnExit={false} appear={false} enter={true} exit={true} onEntering={[Function: noop]} onExit={[Function: noop]} onExiting={[Function: noop]} onExited={[Function: noop]}>
+                            <CarouselItem className=\\"\\">
+                              <div className=\\"carousel-item\\">
+                                <styled.img src=\\"https://img3.goodfon.ru/wallpaper/nbig/c/f7/chuck-norris-chak-norris-legenda-aktior-vzgliad.jpg\\">
+                                  <img src=\\"https://img3.goodfon.ru/wallpaper/nbig/c/f7/chuck-norris-chak-norris-legenda-aktior-vzgliad.jpg\\" className=\\"sc-gsTCUz esHetz\\" />
+                                </styled.img>
+                              </div>
+                            </CarouselItem>
+                          </Transition>
+                          <Transition in={false} onEnter={[Function: noop]} onEntered={[Function: noop]} addEndListener={[Function: transitionEnd]} mountOnEnter={false} unmountOnExit={false} appear={false} enter={true} exit={true} onEntering={[Function: noop]} onExit={[Function: noop]} onExiting={[Function: noop]} onExited={[Function: noop]}>
+                            <CarouselItem className=\\"\\">
+                              <div className=\\"carousel-item\\">
+                                <styled.img src=\\"https://cdn.flickeringmyth.com/wp-content/uploads/2020/03/chuck-norris.jpg\\">
+                                  <img src=\\"https://cdn.flickeringmyth.com/wp-content/uploads/2020/03/chuck-norris.jpg\\" className=\\"sc-gsTCUz esHetz\\" />
+                                </styled.img>
+                              </div>
+                            </CarouselItem>
+                          </Transition>
+                        </div>
+                        <SafeAnchor className=\\"carousel-control-prev\\" onClick={[Function (anonymous)]}>
+                          <a className=\\"carousel-control-prev\\" onClick={[Function: handleClick]} role=\\"button\\" href=\\"#\\" onKeyDown={[Function: handleKeyDown]}>
+                            <span aria-hidden=\\"true\\" className=\\"carousel-control-prev-icon\\" />
+                            <span className=\\"sr-only\\">
+                              Previous
+                            </span>
+                          </a>
+                        </SafeAnchor>
+                        <SafeAnchor className=\\"carousel-control-next\\" onClick={[Function (anonymous)]}>
+                          <a className=\\"carousel-control-next\\" onClick={[Function: handleClick]} role=\\"button\\" href=\\"#\\" onKeyDown={[Function: handleKeyDown]}>
+                            <span aria-hidden=\\"true\\" className=\\"carousel-control-next-icon\\" />
+                            <span className=\\"sr-only\\">
+                              Next
+                            </span>
+                          </a>
+                        </SafeAnchor>
+                      </div>
+                    </Carousel>
+                  </div>
+                </Col>
+              </div>
+            </Row>
+          </EstateInfoCarousel>
+        </EstateInfo>
+      </Route>
+    </Router>
+  </MemoryRouter>
+</Provider>"
+`;
+
+exports[`EstateInfo component without info EstateInfo component shoud get snapShot estates info without estates 1`] = `
+"<Provider store={{...}}>
+  <MemoryRouter initialEntries={{...}}>
+    <Router history={{...}}>
+      <Route path=\\"/info/:id\\" component={[Function: EstateInfo]}>
+        <EstateInfo history={{...}} location={{...}} match={{...}} staticContext={[undefined]}>
+          <NoInfo>
+            <Container className=\\"d-flex align-items-center justify-content-center\\" fluid={false}>
+              <div className=\\"d-flex align-items-center justify-content-center container\\">
+                <styled.div>
+                  <div className=\\"sc-hKgILt gmArwI\\">
+                    Sorry, don&#39;t have any information about this estate.
+                  </div>
+                </styled.div>
+              </div>
+            </Container>
+          </NoInfo>
+        </EstateInfo>
+      </Route>
+    </Router>
+  </MemoryRouter>
+</Provider>"
+`;
