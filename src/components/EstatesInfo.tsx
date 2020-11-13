@@ -45,8 +45,7 @@ if (currentEstate.length === 0) {
                         {`Price: ${currentEstate[0].price}$`}
                     </EstateDescription>
                     <EstateDescription id={params.id}>
-                        {`Address: ${currentEstate[0].address.street},
-                                   ${currentEstate[0].address.number}`}
+                        {`Address: ${currentEstate[0].address.street}, ${currentEstate[0].address.number}`}
                     </EstateDescription>
                     <EstateDescription id={params.id}>
                         {`Seller: ${currentEstate[0].seller}`}
