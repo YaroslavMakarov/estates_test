@@ -6,7 +6,6 @@ import { useDispatch } from 'react-redux';
 
 
 import EstatesLists from './components/EstatesList';
-import Estates from './components/Estates';
 import EstateInfo from './components/EstatesInfo';
 
 import { AppWrapper } from './styled/AppSteles';
