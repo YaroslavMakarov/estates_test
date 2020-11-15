@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test EstateInfoCarousel get snapShot EstateInfoCarousel 1`] = `
+"<Row noGutters={false}>
+  <Col sm={{...}}>
+    <Carousel slide={true} fade={false} controls={true} indicators={true} defaultActiveIndex={0} interval={5000} keyboard={true} pause=\\"hover\\" wrap={true} touch={true} prevIcon={{...}} prevLabel=\\"Previous\\" nextIcon={{...}} nextLabel=\\"Next\\">
+      <CarouselItem>
+        <styled.img src=\\"https://www.wtoc.com/resizer/ckPwhlUdYaFcLiBWMX0J033a0Ow=/1200x0/arc-anglerfish-arc2-prod-raycom.s3.amazonaws.com/public/JGJB35IW4JAMROXX3D3MMEF2SU.jpg\\" />
+      </CarouselItem>
+      <CarouselItem>
+        <styled.img src=\\"https://img3.goodfon.ru/wallpaper/nbig/c/f7/chuck-norris-chak-norris-legenda-aktior-vzgliad.jpg\\" />
+      </CarouselItem>
+      <CarouselItem>
+        <styled.img src=\\"https://cdn.flickeringmyth.com/wp-content/uploads/2020/03/chuck-norris.jpg\\" />
+      </CarouselItem>
+    </Carousel>
+  </Col>
+</Row>"
+`;

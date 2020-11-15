@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Estate component get snapShot Estate 1`] = `
+"<styled.div as={{...}} to=\\"/info/1\\">
+  <styled.img src=\\"https://cp12.nevsepic.com.ua/62/1353962605-0435309-www.nevsepic.com.ua.jpg\\" />
+  <styled.div>
+    Name: Shevchenko estate
+  </styled.div>
+  <styled.div>
+    Price: 30000$
+  </styled.div>
+  <styled.div>
+    Address: Melnychna, 12
+  </styled.div>
+</styled.div>"
+`;
